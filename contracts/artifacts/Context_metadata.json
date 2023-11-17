@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Sensor.sol": "Context"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Sensor.sol": {
+			"keccak256": "0xc3f6f61febf7ae58fb5574352787b735191afda85f110fab0afd40e42ac31357",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://8be181375880b4a46b70256d0104e3be3e071aa169c2b494fe58ea798288b439",
+				"dweb:/ipfs/QmXWarcVjBoCQRbASCXsJUhgk8umfjyXsfL83qXnb75Zr3"
+			]
+		}
+	},
+	"version": 1
+}
