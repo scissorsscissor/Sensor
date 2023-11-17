@@ -74,6 +74,10 @@ interface IERC20 {
      * Emits a {Transfer} event.
      */
     function transferFrom(address from, address to, uint256 value) external returns (bool);
+
+    //Added mint
+    function _mint(address account, uint256 value) external;
+    
 }
 
 
@@ -481,7 +485,7 @@ abstract contract ERC20 is Context, IERC20, IERC20Metadata, IERC20Errors {
      *
      * NOTE: This function is not virtual, {_update} should be overridden instead.
      */
-    function _mint(address account, uint256 value) internal {
+    function _mint(address account, uint256 value) public {
         if (account == address(0)) {
             revert ERC20InvalidReceiver(address(0));
         }
@@ -578,9 +582,10 @@ abstract contract ERC20 is Context, IERC20, IERC20Metadata, IERC20Errors {
 
 contract Sensor is ERC20 {
     uint constant _initial_supply = 100000000 * (10**18);  
-
+    
    
     constructor() ERC20("Sensor", "SEN") public {
-        _mint(msg.sender, _initial_supply);
+        _mint(msg.sender, 10000);
     }
+    
 }

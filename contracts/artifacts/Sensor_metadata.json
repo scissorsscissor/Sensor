@@ -150,6 +150,24 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "_mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "owner",
 						"type": "address"
 					},
@@ -384,6 +402,9 @@
 			},
 			"kind": "dev",
 			"methods": {
+				"_mint(address,uint256)": {
+					"details": "Creates a `value` amount of tokens and assigns them to `account`, by transferring it from address(0). Relies on the `_update` mechanism Emits a {Transfer} event with `from` set to the zero address. NOTE: This function is not virtual, {_update} should be overridden instead."
+				},
 				"allowance(address,address)": {
 					"details": "See {IERC20-allowance}."
 				},
@@ -437,11 +458,11 @@
 	},
 	"sources": {
 		"contracts/Sensor.sol": {
-			"keccak256": "0xc3f6f61febf7ae58fb5574352787b735191afda85f110fab0afd40e42ac31357",
+			"keccak256": "0x2fd790823b0a22ff4406a6fc2d2cb2e9729d56d7d71efd28c2753752fb7dec97",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://8be181375880b4a46b70256d0104e3be3e071aa169c2b494fe58ea798288b439",
-				"dweb:/ipfs/QmXWarcVjBoCQRbASCXsJUhgk8umfjyXsfL83qXnb75Zr3"
+				"bzz-raw://0c8ec5a3333e08be7413f4bcb9d5723b505c461a9f1c7106931963e0a8c58208",
+				"dweb:/ipfs/QmeuhmTHHMvnW6YJHwrwMc4MG7fUX1gAUbXcR9DkxnULe2"
 			]
 		}
 	},
